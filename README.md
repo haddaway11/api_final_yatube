@@ -12,15 +12,14 @@ Yatube это социальная сеть. Она дает пользоват�
 
 ### Как запустить проект:
 
-Установка Python и подготовка окружения
+Установка Python 3.7 и подготовка окружения
 Установите программное обеспечение: скачайте установочные файлы и запустите их.
-Python: www.python.org/downloads/
+Python: www.python.org/downloads/ устанавливаем Python 3.7
 Visual Studio Code: code.visualstudio.com/download
 Git: git-scm.com/download/win
 ```
-
-Клонировать репозиторий и перейти в него в командной строке:
-
+Запустить Git Bash
+Клонировать репозиторий и перейти в него в командной строке Git Bash:
 ```
 git clone git@github.com:haddaway11/api_yatube.git
 ```
@@ -28,37 +27,39 @@ git clone git@github.com:haddaway11/api_yatube.git
 ```
 cd api_final_yatube
 ```
-
 Cоздать и активировать виртуальное окружение:
-
-```
+на Mac или Linux:
 python3 -m venv env
-```
-
-```
 source env/bin/activate
+для Windows:
+python -m venv venv
+source venv/Scripts/activate
 ```
 
-```
+Обновляем pip
+на Mac или Linux:
 python3 -m pip install --upgrade pip
+для Windows:
+python -m pip install --upgrade pip
 ```
 
 Установить зависимости из файла requirements.txt:
-
-```
 pip install -r requirements.txt
 ```
 
 Выполнить миграции:
 
-```
+на Mac или Linux:
 python3 manage.py migrate
+для Windows:
+python manage.py migrate
 ```
 
 Запустить проект:
-
-```
+на Mac или Linux:
 python3 manage.py runserver
+для Windows:
+python manage.py runserver
 ```
 
 ### Документация к API проекта Yatube:
